@@ -24,5 +24,6 @@
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1"
-  }
+  },
+  "gitHead": "3f48304e7a6df72514327a4610fe94a04ecb3d9f"
 }
