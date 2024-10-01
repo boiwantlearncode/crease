@@ -63,7 +63,7 @@ function App() {
 
 ## API Documentation <a name="docs"></a>
 
-Refer to documentation at [API Documentation](https://crease.dev)
+Refer to documentation at [API Documentation](https://crease.dev/docs/overview)
 
 ## Roadmap <a name="roadmap"></a>
 1. Additional props for `Quiz`: `className?`, `styles?`
