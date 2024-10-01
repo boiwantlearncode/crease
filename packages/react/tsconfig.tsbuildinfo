@@ -1,0 +1,1 @@
+{"root":["./src/index.ts","./src/vite-env.d.ts","./src/components/quiz.tsx","./src/utils/shufflearray.ts"],"errors":true,"version":"5.6.2"}
