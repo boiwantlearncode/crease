@@ -1,6 +1,9 @@
 {
   "name": "@crease/react",
   "version": "0.0.4",
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "files": [
     "dist"
@@ -41,5 +44,5 @@
     "vite": "^5.4.1",
     "vite-plugin-dts": "^4.2.1"
   },
-  "gitHead": "3f48304e7a6df72514327a4610fe94a04ecb3d9f"
+  "gitHead": "909d6988a9aef07883e27f71ab62769688ccd56f"
 }
