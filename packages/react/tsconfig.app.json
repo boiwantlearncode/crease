@@ -20,6 +20,7 @@
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
+    "allowJs": true,
 
     /* Linting */
     "strict": true,
