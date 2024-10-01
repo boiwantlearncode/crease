@@ -66,7 +66,7 @@ function App() {
 Refer to documentation at [API Documentation](https://crease.github.io)
 
 ## Roadmap <a name="roadmap"></a>
-(1) Additional props for `Quiz`: `className?`, `styles?`
+1. Additional props for `Quiz`: `className?`, `styles?`
 Each receives an object that allows modification of 3 types within the quiz.
 
 ```ts
@@ -86,32 +86,17 @@ type styles = {
 
 Examples of customization e.g. options are displayed in a straight column rather than 2x2.
 
-(2) New quiz format
+2. New quiz format
 -> "multiple-answers" 
 -> "categorical"
 -> "mixed" --> each question can be of any format
 
-(3) Templates (starter-kit) e.g. true-false
+3. Templates (starter-kit) e.g. true-false
 ...
 -> Callback function prop that accepts hook to allow retrieving of data (currentScore, results) from Quiz.
 -> Analysis report in results page, and custom results page.
 -> Support mixed types in question and options, e.g. an image as question or a mix of image and text as options.
 
-/**
-THE LOGIC:
-1. make it such that only the particular elements selected will have their styles changed
-.. meaning that even if we have styles/className, the default will be kept and not totally overridden
-.. (a) this requires !important modifier
-.. (b) other method is using .replace() to replace existing css property e.g. replace width or height. this 
-.... is optimized and has no redundancy. the issue is that it will take time in performing the .replace()
-.... function
-
-*/
-
-
-
 ## How to contribute <a name="contribute"></a>
 
-We're always looking for contributors to help us fix bugs, build new features,
-or help us improve the project documentation. If you're interested, definitely
-check out our [Contributing Guide](/CONTRIBUTING.md)! 
+Have a look at our [Contributing Guide](/CONTRIBUTING.md)! 
