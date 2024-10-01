@@ -34,9 +34,9 @@ Import the Quiz component
 
 ```tsx
 import { Quiz } from '@crease/react';
-import type { Content } from '@crease/react';
+import type { Content, NonEmptyArray } from '@crease/react';
 
-const content: Content[] = [
+const content: NonEmptyArray<Content> = [
   {
     question: "What is 1 + 1?",
     options: [
@@ -63,7 +63,7 @@ function App() {
 
 ## API Documentation <a name="docs"></a>
 
-Refer to documentation at [API Documentation](https://crease.github.io)
+Refer to documentation at [API Documentation](https://crease.dev)
 
 ## Roadmap <a name="roadmap"></a>
 1. Additional props for `Quiz`: `className?`, `styles?`
@@ -99,4 +99,5 @@ Examples of customization e.g. options are displayed in a straight column rather
 
 ## How to contribute <a name="contribute"></a>
 
-Have a look at our [Contributing Guide](/CONTRIBUTING.md)! 
+Contributions are greatly welcomed! 😚
+Currently, we do not have a contributing guide. 😞

@@ -7,10 +7,11 @@
     "esModuleInterop": true,
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
-
+    
     "moduleResolution": "Bundler",
     "module": "ESNext",
-    "outDir": "dist",
+    "rootDir": "./src",
+    "outDir": "./dist",
     "sourceMap": true,
     "noEmit": true,
     "composite": true,
