@@ -1,6 +1,13 @@
 {
   "name": "@crease/react",
   "version": "0.0.5",
+  "keywords": [
+    "react",
+    "component",
+    "ui",
+    "library",
+    "quiz"
+  ],
   "publishConfig": {
     "access": "public"
   },

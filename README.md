@@ -18,7 +18,7 @@ Current formats available:
 
 ## Installation <a name="installation"></a>
 
-Install `@carbon/react` with any one of the following commands:
+Install `@crease/react` with any one of the following commands:
 
 ```bash
 npm i @crease/react
