@@ -1,0 +1,11 @@
+39 error Error: Command failed with exit code 1: npm install --package-lock-only --ignore-scripts
+39 error npm error code ETARGET
+39 error npm error notarget No matching version found for core@^0.0.0.
+39 error npm error notarget In most cases you or one of your dependencies are requesting
+39 error npm error notarget a package version that doesn't exist.
+39 error npm error A complete log of this run can be found in: /Users/isayamin/.npm/_logs/2024-10-01T11_48_55_676Z-debug-0.log
+39 error     at makeError (/Users/isayamin/Desktop/Crease/node_modules/execa/lib/error.js:59:11)
+39 error     at handlePromise (/Users/isayamin/Desktop/Crease/node_modules/execa/index.js:114:26)
+39 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+39 error     at async VersionCommand.updatePackageVersions (/Users/isayamin/Desktop/Crease/node_modules/lerna/dist/index.js:9890:13)
+39 error     at async Promise.all (index 0)
