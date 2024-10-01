@@ -8,13 +8,15 @@ Current formats available:
 - [ ] Categorical (Personality Quiz)
 - [ ] ...
 
-1. Installation
-2. Usage
-3. API Documentation
-4. Roadmap
-5. How to contribute
+## Table of Contents
 
-## Installation
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [API Documentation](#docs)
+4. [Roadmap](#roadmap)
+5. [How to contribute](#contribute)
+
+## Installation <a name="installation"></a>
 
 Install `@carbon/react` with any one of the following commands:
 
@@ -26,7 +28,7 @@ npm i @crease/react
 yarn add @crease/react
 ```
 
-## Usage
+## Usage <a name="usage"></a>
 
 Import the Quiz component
 
@@ -59,11 +61,11 @@ function App() {
 }
 ```
 
-## API Documentation
+## API Documentation <a name="docs"></a>
 
 Refer to documentation at [API Documentation](https://crease.github.io)
 
-## Roadmap
+## Roadmap <a name="roadmap"></a>
 (1) Additional props for `Quiz`: `className?`, `styles?`
 Each receives an object that allows modification of 3 types within the quiz.
 
@@ -108,7 +110,7 @@ THE LOGIC:
 
 
 
-## How to contribute
+## How to contribute <a name="contribute"></a>
 
 We're always looking for contributors to help us fix bugs, build new features,
 or help us improve the project documentation. If you're interested, definitely
