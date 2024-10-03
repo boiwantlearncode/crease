@@ -17,4 +17,4 @@ yarn add @crease/react
 
 ## Usage
 
-Refer to the the [github](https://github.com/boiwantlearncode/crease) for more information.
+Refer to the [github](https://github.com/boiwantlearncode/crease) for more information.

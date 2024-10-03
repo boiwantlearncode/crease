@@ -2,19 +2,14 @@
 
 Crease is a responsive React component library powered by Tailwind CSS, designed to easily implement various types of interactive quizzes.
 
-Current formats available:
-- [x] Single Answer
-- [ ] Multiple Answers
-- [ ] Categorical (Personality Quiz)
-- [ ] ...
+View the API Documentation at [crease.dev](https://www.crease.dev)
 
 ## Table of Contents
 
 1. [Installation](#installation)
 2. [Usage](#usage)
-3. [API Documentation](#docs)
-4. [Roadmap](#roadmap)
-5. [How to contribute](#contribute)
+3. [Roadmap](#roadmap)
+4. [How to contribute](#contribute)
 
 ## Installation <a name="installation"></a>
 
@@ -60,10 +55,6 @@ function App() {
   )
 }
 ```
-
-## API Documentation <a name="docs"></a>
-
-Refer to documentation at [API Documentation](https://crease.dev/docs/overview)
 
 ## Roadmap <a name="roadmap"></a>
 1. Additional props for `Quiz`: `className?`, `styles?`
