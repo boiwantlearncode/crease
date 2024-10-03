@@ -22,7 +22,7 @@ npm i @crease/react
 yarn add @crease/react
 ```
 
-## Usage <a name="usage"></a>
+## Basic usage <a name="usage"></a>
 
 Import the Quiz component
 
@@ -58,4 +58,5 @@ function App() {
 ## How to contribute <a name="contribute"></a>
 
 Contributions are greatly welcomed! 😚
+
 Currently, we do not have a contributing guide. 😞
