@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import shuffleArray from '../utils/shuffleArray';
 import { Maximize2 } from 'lucide-react';
+import { twMerge } from 'tailwind-merge';
 
 // Have to enforce correctAnswerIndex within the range and no duplicates in the options array
 // Image embed (1), in future carousel so multiple in questions
@@ -16,8 +17,11 @@ export type Content = {
   correctAnswerIndex: number;
 };
 
+// Future versions, apply styling to 3 components of Content.
 export type QuizProps = {
+  /** Applies styling to the parent container. */
   style?: React.CSSProperties;
+  /** Applies classes to the parent container. */
   className?: string;
   /** Sets the color scheme of component. */
   theme: "light" | "dark";
@@ -54,7 +58,7 @@ type ModalProps = {
 /**
  * Quiz component renders a quiz with various configurations like size, theme, and optional shuffle option.
  */
-export const Quiz = ({  theme, shuffle, content }: QuizProps): JSX.Element => {
+export const Quiz = ({ style, className, theme, shuffle, content }: QuizProps): JSX.Element => {
   const totalQuestions: number = content.length;
 
   const defaultOptionsStyle: string = theme === "light" ? "bg-white border-gray-300 text-zinc-900 bg-opacity-10" : "bg-black border-gray-600 text-zinc-200 bg-opacity-10";
@@ -120,10 +124,13 @@ export const Quiz = ({  theme, shuffle, content }: QuizProps): JSX.Element => {
 
   return (
     <div className={`${theme === 'dark' ? 'dark' : ''}`} >
-      <div className={`
-        w-[calc(90vw)] h-[calc(90vh)] lg:w-default lg:h-default rounded-md flex-col py-4 px-6
-        dark:bg-gray-950 bg-gray-200
-      `}>
+      <div 
+        className={twMerge(
+          'w-[calc(90vw)] h-[calc(90vh)] lg:w-default lg:h-default rounded-md flex-col py-4 px-6 dark:bg-gray-950 bg-gray-200',
+          className
+        )}
+        style={style}
+      >
         {questionIndex === totalQuestions ? (
           <Results className={`dark:text-gray-200 text-gray-900`} score={score.current} totalQuestions={totalQuestions} />
         ) : (
