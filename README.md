@@ -7,7 +7,7 @@ View the full documentation at [crease.dev](https://www.crease.dev)
 ## Table of Contents
 
 1. [Installation](#installation)
-2. [Usage](#usage)
+2. [Basic usage](#usage)
 3. [How to contribute](#contribute)
 
 ## Installation <a name="installation"></a>
