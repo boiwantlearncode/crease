@@ -1,27 +1,32 @@
+import React from 'react';
 import './App.css'
 
-import { Quiz, type Content, type NonEmptyArray } from './components/Quiz'
+import { Quiz, type MixedContent, type NonEmptyArray } from './components/Quiz'
 
-const content: NonEmptyArray<Content> = [
+const content: NonEmptyArray<MixedContent> = [
   {
+    format: "multiple-answers",
     question: "How much wood could a woodchuck chuck if a woodchuck could chuck wood?",
     options: ["A", "B", "C", "D"],
-    correctAnswerIndex: 2
+    correctAnswers: [0, 1]
   },
   {
+    format: "single-answer",
     question: "What is the capital of France?",
     options: ["Paris", "London", "Berlin", "Madrid"],
-    correctAnswerIndex: 0
+    correctAnswers: 0
   },
   {
+    format: "single-answer",
     question: "What is the capital of Germany?",
     options: ["Paris", "London", "Berlin", "Madrid"],
-    correctAnswerIndex: 2
+    correctAnswers: 2
   },
   {
+    format: "single-answer",
     question: "What is the capital of Spain?",
     options: ["Paris", "London", "Berlin", "Madrid"],
-    correctAnswerIndex: 3
+    correctAnswers: 3
   }
 ];
 
@@ -30,9 +35,8 @@ function App() {
   return (
     <div>
       <Quiz 
-        theme='light' 
+        theme='dark' 
         shuffle={true} 
-        format='single-answer'
         content={content}
       />
     </div>
