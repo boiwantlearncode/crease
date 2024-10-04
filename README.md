@@ -26,30 +26,43 @@ yarn add @crease/react
 
 Import the Quiz component
 
-```tsx
+```tsx title="App.tsx"
 import { Quiz } from '@crease/react';
-import type { Content, NonEmptyArray } from '@crease/react';
+import type { MixedContent, NonEmptyArray } from '@crease/react';
 
-const content: NonEmptyArray<Content> = [
+const content: NonEmptyArray<MixedContent> = [
   {
-    question: "What is 1 + 1?",
+    format: "single-answer",
+    question: "Is 1+1=2?",
     options: [
-      "2",
-      "4",
-      "1",
-      "0"
+      "True",
+      "False"
     ],
-    correctAnswerIndex: 0 // Index of the correct answer within the options array.
+    correctAnswers: 0 // Index of the correct answer within the options array.
+  },    
+  {
+    format: "single-answer",
+    question: "Are there more atoms in the universe than pigeons?",
+    options: [
+      "True",
+      "False"
+    ],
+    correctAnswers: 0
+  },
+  {
+    format: "multiple-answers",
+    question: "Which of these are prime numbers?",
+    options: ["-2", "7", "3", "1"],
+    correctAnswers: [1, 2] // has to be an array of indexes for "multiple-answers" format
   }
 ]
 
 function App() {
   return (
     <Quiz
-        theme='dark' 
-        shuffle={true} 
-        format='single-answer'
-        content={content}
+      theme='dark' 
+      shuffle={true} // Order of questions displayed will be random
+      content={content}
     />
   )
 }

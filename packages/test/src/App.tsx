@@ -7,10 +7,10 @@ import type { MixedContent, NonEmptyArray } from '@crease/react'
 
 const content: NonEmptyArray<MixedContent> = [
   {
-    format: "multiple-answers",
+    format: "single-answer",
     question: "How much wood could a woodchuck chuck if a woodchuck could chuck wood?",
     options: ["A", "B", "C", "D"],
-    correctAnswers: [1, 2]
+    correctAnswers: 1
   },
   {
     format: "single-answer",

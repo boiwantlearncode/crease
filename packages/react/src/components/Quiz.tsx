@@ -36,14 +36,6 @@ export type MixedContent = SingleAnswerContent | MultipleAnswersContent;
 
 // Future versions, apply styling to 3 components of Content.
 export type QuizProps<T extends MixedContent> = {
-  /** Applies styling to the parent container. */
-  style?: React.CSSProperties;
-  /** Applies classes to the parent container. */
-  className?: string;
-  /** Sets the color scheme of component. */
-  theme: "light" | "dark";
-  /** (Optional) Whether to randomize the order of the questions. */
-  shuffle?: boolean;
   /** 
    * Sets the content of the quiz:
    * - `format: "single-answer" | "multiple-answers"`
@@ -52,6 +44,14 @@ export type QuizProps<T extends MixedContent> = {
    * - `correctAnswerIndex: number | number[]` - The index (0-based) of the correct answer(s) within the `options` array.
    */
   content: NonEmptyArray<T>;
+  /** Applies classes to the parent container. */
+  className?: string;
+  /** Applies styling to the parent container. */
+  style?: React.CSSProperties;
+  /** Sets the color scheme of component. */
+  theme: "light" | "dark";
+  /** (Optional) Whether to randomize the order of the questions. */
+  shuffle?: boolean;
 };
 
 type ResultsProps = {
