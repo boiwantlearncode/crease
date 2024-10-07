@@ -1,5 +1,7 @@
 # Crease
 
+![Introduction](./introduction.gif)
+
 Crease is a responsive React component library powered by Tailwind CSS, designed to easily implement various types of interactive quizzes.
 
 View the full documentation at [crease.dev](https://www.crease.dev)
