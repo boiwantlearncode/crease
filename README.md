@@ -1,6 +1,8 @@
 # Crease
 
-![Introduction](./introduction.gif)
+<video width="480" autoplay loop >
+  <source src="introduction.mov" type="video/mp4">
+</video>
 
 Crease is a responsive React component library powered by Tailwind CSS, designed to easily implement various types of interactive quizzes.
 
