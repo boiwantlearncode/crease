@@ -1,7 +1,7 @@
 # Crease
 
 <video playsinline muted autoplay loop >
-  <source src="introduction.mp4" type="video/mp4">
+  <source src="./introduction.mp4" type="video/mp4">
 </video>
 <!-- <video width="480" playsinline muted autoplay loop >
 </video> -->
