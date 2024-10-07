@@ -1,7 +1,8 @@
 # Crease
 
-https://github.com/user-attachments/assets/ba0e5fd6-7a91-4c61-834d-a07fe14fa8da
-
+<video playsinline muted autoplay loop >
+  <source src="https://github.com/user-attachments/assets/ba0e5fd6-7a91-4c61-834d-a07fe14fa8da" type="video/mp4">
+</video>
 <!-- <video width="480" playsinline muted autoplay loop >
 </video> -->
 
